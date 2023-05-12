@@ -1,0 +1,26 @@
+figure{
+    width: 600px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #666;
+    padding: 10px 50px;
+}
+figure>img{
+    width: 100px;
+}
+figure>figcaption{
+    width: 580px;
+    margin-left: 100px;
+}
+figure>figcaption>dl{}
+figure>figcaption>dl>dt{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+figure>figcaption>dl>dd{
+    font-size: 16px;
+    margin-bottom: 10px;
+}

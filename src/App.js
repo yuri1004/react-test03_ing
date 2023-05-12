@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import Productor from "./component/Productor";
+import data from './productList.json';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+// App  컨포넌트
+function App(){
+  return(
+    <div id="wrap">
+      <div className='btn'>
+        <button type='button'>아이디순</button>
+        <button type='button'>가격순</button>
+      </div>
+      <Productor item={data}/>
     </div>
-  );
+  )
 }
 
 export default App;
